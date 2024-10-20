@@ -61,6 +61,7 @@ export default {
     };
   },
   async created() {
+    console.log('VUE_APP_PRODUCT_SERVICE_URL:', process.env.VUE_APP_PRODUCT_SERVICE_URL);
     await this.fetchProducts();
   },
   computed: {
