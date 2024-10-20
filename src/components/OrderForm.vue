@@ -76,7 +76,7 @@ export default {
           this.products = await response.json();
         } else {
           console.log('Response status:', response.status, response.statusText);
-          alert('Aki woishe.');
+          alert(`Response status: ${response.status} - ${response.statusText}`);
         }
       } catch (error) {
         console.error('Error fetching products:', error);
