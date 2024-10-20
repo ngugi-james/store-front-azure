@@ -75,8 +75,7 @@ export default {
         if (response.ok) {
           this.products = await response.json();
         } else {
-          console.log('Response status:', response.status, response.statusText);
-          alert(`Response status: ${response.status} - ${response.statusText}`);
+          alert(`Jua ni Kubaya`);
         }
       } catch (error) {
         console.error('Error fetching products:', error);
