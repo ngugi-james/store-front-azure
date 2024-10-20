@@ -75,6 +75,7 @@ export default {
         if (response.ok) {
           this.products = await response.json();
         } else {
+          console.log('Response status:', response.status, response.statusText);
           alert('Aki woishe.');
         }
       } catch (error) {
