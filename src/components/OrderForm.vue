@@ -75,7 +75,7 @@ export default {
         if (response.ok) {
           this.products = await response.json();
         } else {
-          alert('Failed to fetch products.');
+          alert('Aki woishe.');
         }
       } catch (error) {
         console.error('Error fetching products:', error);
